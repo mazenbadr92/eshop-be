@@ -1,0 +1,59 @@
+{ 
+    "version":"2.0.0",
+    "tasks":[ 
+        { 
+            "label":"tsc",
+            "command":"tsc",
+            "type":"shell",
+            "args":[ 
+
+            ],
+            "problemMatcher":[ 
+                "$tsc"
+            ],
+            "presentation":{ 
+                "reveal": "silent"
+            },
+            "group":"build"
+        },
+        { 
+            "label":"typeorm: migrate",
+            "type":"shell",
+            "command":"typeorm",
+            "args":[ 
+                "migrations:run"
+            ],
+            "problemMatcher":[ 
+                "$tsc",
+            ],
+            "presentation":{ 
+                "reveal": "always"
+            },
+            "dependsOn": "tsc",
+        },
+        { 
+            "label":"typeorm: create new migration",
+            "type":"shell",
+            "command":"typeorm",
+            "args":[ 
+                "migrations:create",
+                "-n",
+                "${input:migrationName}"
+            ],
+            "problemMatcher":[ 
+                "$tsc",
+            ],
+            "presentation":{ 
+                "reveal": "always"
+            },
+            "dependsOn": "tsc",
+        },
+    ],
+    "inputs":[ 
+        { 
+            "description":"Please enter the migration name",
+            "id":"migrationName",
+            "type":"promptString"
+        }
+    ],
+}

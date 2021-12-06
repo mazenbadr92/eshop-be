@@ -1,0 +1,32 @@
+{
+    "development": {
+        "port": 9000,
+        "database": {
+            "host": "",
+            "name": "",
+            "username": "",
+            "password": "",
+            "autoSchemaSync": false
+        }
+    },
+    "test": {
+        "port": 9000,
+        "database": {
+            "host": "",
+            "name": "",
+            "username": "",
+            "password": "",
+            "autoSchemaSync": false
+        }
+    },
+    "production": {
+        "port": 3000,
+        "database": {
+            "host": "",
+            "name": "",
+            "username": "",
+            "password": "",
+            "autoSchemaSync": false
+        }
+    }
+}

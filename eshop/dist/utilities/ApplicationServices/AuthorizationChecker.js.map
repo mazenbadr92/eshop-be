@@ -1,0 +1,1 @@
+{"version":3,"file":"AuthorizationChecker.js","sourceRoot":"","sources":["../../../src/utilities/ApplicationServices/AuthorizationChecker.ts"],"names":[],"mappings":";;;;;;;;;;;;AAGA,MAAa,0BAA0B;IACtC,MAAM,CAAO,QAAQ,CAAC,MAAc,EAAE,KAAU;;YAC/C,IAAI;gBACH,OAAO,IAAI,CAAC;aACZ;YAAC,OAAO,CAAC,EAAE;gBACX,OAAO,KAAK,CAAC;aACb;QACF,CAAC;KAAA;CACD;AARD,gEAQC"}
